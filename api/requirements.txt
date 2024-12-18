@@ -1,0 +1,10 @@
+numpy
+scikit-learn
+psutil
+mlflow
+tqdm
+fastapi
+uvicorn
+dagshub
+pydantic
+scipy
