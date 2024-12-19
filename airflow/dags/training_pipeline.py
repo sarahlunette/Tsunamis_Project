@@ -9,7 +9,7 @@ import dagshub
 from dagshub import get_repo_bucket_client
 
 # TODO: check usefulness of these paths appendings (I should put the scripts in a scripts folder and init and .airflowignore)
-sys.path.append('/opt/airflow/scripts')
+sys.path.append('/opt/airflow/src')
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
 # Get a boto3.client object
@@ -31,15 +31,14 @@ s3 = get_repo_bucket_client("sarahlunette/Data_Atelier")
 # TODO: organize the data folders above (these should be called in the other scripts and should be in a volume and not within the container or on a db server and to db server)
 
 
-from load_data_s3_dagshub_airflow import upload_all
-from preprocessing_interim_dagshub_airflow import write_data
-from tsunamis_shortened_airflow import train_model
+from src.data.load_data_s3_dagshub_airflow import upload_all
+from src.features.preprocessing_interim_dagshub_airflow import write_data
+from src.models.tsunamis_shortened_airflow import train_model
 
 
 default_args = {
     'owner': 'airflow',
     'start_date': datetime(2024, 11, 2),
-
 
 # Define your DAG
 dag = DAG(
