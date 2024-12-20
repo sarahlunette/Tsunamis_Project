@@ -22,4 +22,3 @@ def upload_all():
     upload_file(path, "gdp.csv")
     upload_file(path, "population.csv")
 
-upload_all()
