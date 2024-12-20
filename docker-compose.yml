@@ -23,8 +23,8 @@ x-airflow-common: &airflow-common
     - ./airflow/dags:/opt/airflow/dags
     - ./airflow/logs:/opt/airflow/logs
     - ./airflow/plugins:/opt/airflow/plugins
-    - ../src:/opt/airflow/src
-    - ../data/:/opt/airflow/data # TODO: check if ./airflow/data doesn't work better, not sure ../ is ok path
+    - ./src:/opt/airflow/src
+    - ./data/:/opt/airflow/data # TODO: check if ./airflow/data doesn't work better, not sure ../ is ok path
   user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
   depends_on:
     redis:
@@ -119,19 +119,19 @@ services:
       - ENV=production  # Environement variables for production environement could be other denomination for test or dev
     restart: unless-stopped
 
-  prometheus:
-    image: prom/prometheus:latest
-    container_name: prometheus
-    ports:
-      - "9090:9090" # Local port:Container port
-    volumes:
-      - ./prometheus/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml # Mount configuration file # TODO: Change name of prometheus folder
-      - prometheus-data:/prometheus # Volume to stock persistent data
-    command:
-      - "--config.file=/etc/prometheus/prometheus.yml"
-      - "--storage.tsdb.path=/prometheus"
-    restart: always
+  #prometheus:
+    #image: prom/prometheus:latest
+    #container_name: prometheus
+    #ports:
+    #  - "9090:9090" # Local port:Container port
+    #volumes:
+    #  - ./prometheus/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml # Mount configuration file # TODO: Change name of prometheus folder
+    #  - prometheus-data:/prometheus # Volume to stock persistent data
+    #command:
+    #  - "--config.file=/etc/prometheus/prometheus.yml"
+    #  - "--storage.tsdb.path=/prometheus"
+    #restart: always
 
 volumes:
   postgres-db-volume:
-  prometheus-data: # Volume for persistent data
+  #prometheus-data: # Volume for persistent data

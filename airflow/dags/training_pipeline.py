@@ -31,18 +31,19 @@ s3 = get_repo_bucket_client("sarahlunette/Data_Atelier")
 # TODO: organize the data folders above (these should be called in the other scripts and should be in a volume and not within the container or on a db server and to db server)
 
 
-from src.data.load_data_s3_dagshub_airflow import upload_all
-from src.features.preprocessing_interim_dagshub_airflow import write_data
-from src.models.tsunamis_shortened_airflow import train_model
+from data.load_data_s3_dagshub_airflow import upload_all
+from features.preprocessing_interim_dagshub_airflow import write_data
+from models.tsunamis_shortened_airflow import train_model
 
 
 default_args = {
     'owner': 'airflow',
     'start_date': datetime(2024, 11, 2),
+}
 
 # Define your DAG
 dag = DAG(
-    'my_dag_2',
+    'training_pipeline',
     start_date=datetime(2024, 10, 27),
     schedule ='@daily',
     catchup=True
@@ -71,4 +72,4 @@ task3 = PythonOperator(
     provide_context=True
 )
 
-tas1 >> task2 >> task3
+task1 >> task2 >> task3

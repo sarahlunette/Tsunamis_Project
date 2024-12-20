@@ -1,0 +1,1 @@
+[2024-12-20T09:19:44.338+0000] {task_context_logger.py:104} ERROR - Executor reports task instance <TaskInstance: my_dag_2.load_data manual__2024-12-20T09:19:10.879974+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
