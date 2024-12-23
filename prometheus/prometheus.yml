@@ -1,7 +1,8 @@
 global:
-  scrape_interval: 15s  # Intervalle de scraping pour Prometheus
+  scrape_interval: 15s  # Default scrape interval for targets.
 
 scrape_configs:
-  - job_name: 'api'
+  - job_name: "fastapi"                # Identifier for the FastAPI service
     static_configs:
-      - targets: ['api:8000']  # L'API FastAPI s'exécute sur le port 8000 dans le conteneur
+      - targets:
+          - "fastapi_container:8000"  # FastAPI app running on port 8000 in the Docker network

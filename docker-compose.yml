@@ -24,7 +24,7 @@ x-airflow-common: &airflow-common
     - ./airflow/logs:/opt/airflow/logs
     - ./airflow/plugins:/opt/airflow/plugins
     - ./src:/opt/airflow/src
-    - ./data/:/opt/airflow/data # TODO: check if ./airflow/data doesn't work better, not sure ../ is ok path
+    - ./data/:/opt/airflow/data
   user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
   depends_on:
     redis:
@@ -112,11 +112,14 @@ services:
       dockerfile: Dockerfile  # Name of file with Dockerfile (optional if "Dockerfile")
     container_name: fastapi_container
     ports:
-      - "8000:8000"  # Map the port of the host to container
-    volumes:
-      - ./api/apps:/apps  # Mount local api folder in /app within the container # TODO: (/apps is within app ?)
+      - "8000:8000"  # Map FastAPI port
     environment:
+      - PROMETHEUS_PORT=9090
+      - API_HOST=0.0.0.0
+      - API_PORT=8000  # Map the port of the host to container
       - ENV=production  # Environement variables for production environement could be other denomination for test or dev
+    volumes:
+      - ./api:/api  # Mount local api folder in /api within the container
     restart: unless-stopped
     networks:
       - monitoring

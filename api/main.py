@@ -1,0 +1,201 @@
+import time
+import pandas as pd
+from fastapi import FastAPI, HTTPException, Request, Response
+from prometheus_client import start_http_server, Counter, generate_latest, Histogram, REGISTRY
+import mlflow
+import dagshub
+from pydantic import BaseModel
+import uvicorn
+
+# Configuring DagsHub and MLflow
+dagshub.auth.add_app_token('9502d9affc30a33129d5c9ca267e2f3e79219c87')
+repo_name = "Data_Atelier"
+dagshub.init(repo_owner="sarahlunette", repo_name=repo_name, mlflow=True)
+mlflow.set_tracking_uri("https://dagshub.com/sarahlunette/Data_Atelier.mlflow")
+
+# Import MLflow model
+client = mlflow.tracking.MlflowClient()
+experiment_name = "tsunamis_n_perplexity_k_neighbors"
+experiments = mlflow.search_experiments()
+for exp in experiments:
+    if exp.name == experiment_name:
+        experiment_id = exp.experiment_id
+runs = client.search_runs(experiment_ids=[experiment_id])
+best_run = max(runs, key=lambda run: run.data.metrics.get('r2', float("-inf")))
+model_uri = f"runs:/{best_run.info.run_id}/GBR/"
+
+run_id = '53d6b2758e4d4242bdf8e834ffb6988b'
+model_uri = f"runs:/{run_id}/GBR/"
+
+model = mlflow.pyfunc.load_model(model_uri)
+
+# Definition of Prometheus metrics
+http_requests_total = Counter('http_requests_total', 'Total number of HTTP requests')
+request_duration_seconds = Histogram('request_duration_seconds', 'HTTP request duration in seconds')
+
+# Instantiation of the API FastAPI
+app = FastAPI()
+
+class InputData(BaseModel):
+    month: int
+    day: int
+    country: str
+    period: int
+    latitude: float
+    longitude: float
+    runup_ht: float
+    runup_ht_r: float
+    runup_hori: float
+    dist_from_: float
+    hour: float
+    cause_code: float
+    event_vali: float
+    eq_mag_unk: float
+    eq_mag_mb: float
+    eq_mag_ms: float
+    eq_mag_mw: float
+    eq_mag_mfa: float
+    eq_magnitu: float
+    eq_magni_1: float
+    eq_depth: float
+    max_event_: float
+    ts_mt_ii: float
+    ts_intensi: float
+    num_runup: float
+    num_slides: float
+    map_slide_: float
+    map_eq_id: float
+
+
+columns_final = [
+    "month",
+    "day",
+    "period",
+    "latitude",
+    "longitude",
+    "runup_ht",
+    "runup_ht_r",
+    "runup_hori",
+    "dist_from_",
+    "hour",
+    "cause_code",
+    "event_vali",
+    "eq_mag_unk",
+    "eq_mag_mb",
+    "eq_mag_ms",
+    "eq_mag_mw",
+    "eq_mag_mfa",
+    "eq_magnitu",
+    "eq_magni_1",
+    "eq_depth",
+    "max_event_",
+    "ts_mt_ii",
+    "ts_intensi",
+    "num_runup",
+    "num_slides",
+    "map_slide_",
+    "map_eq_id",
+    "gdp_per_capita",
+    "country_bangladesh",
+    "country_canada",
+    "country_chile",
+    "country_china",
+    "country_colombia",
+    "country_costa rica",
+    "country_dominican republic",
+    "country_ecuador",
+    "country_egypt",
+    "country_el salvador",
+    "country_fiji",
+    "country_france",
+    "country_french polynesia",
+    "country_greece",
+    "country_haiti",
+    "country_india",
+    "country_indonesia",
+    "country_italy",
+    "country_jamaica",
+    "country_japan",
+    "country_kenya",
+    "country_madagascar",
+    "country_malaysia",
+    "country_maldives",
+    "country_mexico",
+    "country_micronesia",
+    "country_myanmar",
+    "country_new caledonia",
+    "country_new zealand",
+    "country_nicaragua",
+    "country_norway",
+    "country_pakistan",
+    "country_panama",
+    "country_papua new guinea",
+    "country_peru",
+    "country_philippines",
+    "country_portugal",
+    "country_russia",
+    "country_samoa",
+    "country_solomon islands",
+    "country_somalia",
+    "country_south korea",
+    "country_spain",
+    "country_sri lanka",
+    "country_taiwan",
+    "country_tanzania",
+    "country_tonga",
+    "country_turkey",
+    "country_united kingdom",
+    "country_united states",
+    "country_vanuatu",
+    "country_venezuela",
+    "country_yemen",
+]
+
+@app.post("/predict/")
+async def predict(input_data: InputData):
+    start_time = time.time()
+    http_requests_total.inc()
+    
+    # Preparing entry data
+    country = "country_" + input_data.country
+    data = input_data.dict()
+    del data["country"]
+    for key in data.keys():
+        data[key] = [data[key]]
+    data[country] = 1  # Filling country column with 1
+    
+    # DataFrame creation
+    record = pd.DataFrame.from_dict(data)
+    record = record.reindex(columns=columns_final, fill_value=0)
+    record["clustering"] = 0  # Example: adding a clustering column, filled with 0 #TODO: real clustering logic
+
+    # Prediction
+    try:
+        prediction = model.predict(record)
+        duration = time.time() - start_time
+        request_duration_seconds.observe(duration)  # Record request duration
+        return {"prediction": str(prediction[0])}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Prediction failed: {str(e)}")
+
+@app.get("/metrics")
+def metrics(request: Request):
+    # Generate the Prometheus metrics in the correct format
+    metrics_data = generate_latest(REGISTRY)
+    
+    # Return the data with the correct content type for Prometheus
+    return Response(content=metrics_data, media_type="text/plain")
+
+# Entry point for both local and Docker execution
+if __name__ == "__main__":
+    import os
+    prometheus_port = int(os.getenv("PROMETHEUS_PORT", 9090))  # Default Prometheus port: 9090
+    api_host = os.getenv("API_HOST", "0.0.0.0")  # Default host: all interfaces
+    api_port = int(os.getenv("API_PORT", 8000))  # Default API port: 8000
+
+    # Start Prometheus server in a separate thread
+    start_http_server(prometheus_port)
+    print(f"Prometheus metrics server running on port {prometheus_port}")
+
+    # Start FastAPI server
+    uvicorn.run(app, host=api_host, port=api_port)
