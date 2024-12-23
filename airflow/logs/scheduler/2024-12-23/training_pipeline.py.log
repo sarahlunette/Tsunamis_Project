@@ -1,0 +1,323 @@
+[2024-12-23T09:32:44.611+0000] {processor.py:161} INFO - Started process (PID=2802) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:32:44.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:32:44.629+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:32:44.628+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:32:46.271+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:32:46.259+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:32:47.201+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:32:47.229+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:32:47.228+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:32:48.290+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:32:48.291+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:32:48.291+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:32:48.332+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:32:48.333+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:32:48.333+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:32:49.672+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:32:49.673+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:32:49.672+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:32:53.573+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:32:53.697+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:32:53.696+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:32:53.723+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:32:53.723+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:32:53.751+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 9.155 seconds
+[2024-12-23T09:33:23.923+0000] {processor.py:161} INFO - Started process (PID=2907) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:33:23.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:33:23.926+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:23.925+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:33:24.129+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:24.129+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:33:24.342+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:33:24.343+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:24.343+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:33:24.700+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:33:24.701+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:24.701+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:33:24.741+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:33:24.742+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:24.742+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:33:25.111+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:33:25.112+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:25.111+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:33:27.552+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:33:27.577+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:27.577+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:33:27.604+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:27.604+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:33:27.629+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 3.712 seconds
+[2024-12-23T09:33:58.374+0000] {processor.py:161} INFO - Started process (PID=2990) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:33:58.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:33:58.377+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:58.377+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:33:58.562+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:58.562+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:33:58.888+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:33:58.889+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:58.888+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:33:59.421+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:33:59.422+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:59.421+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:33:59.451+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:33:59.452+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:59.452+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:33:59.791+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:33:59.792+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:33:59.791+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:34:02.131+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:34:02.154+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:34:02.153+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:34:02.176+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:34:02.176+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:34:02.198+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 3.828 seconds
+[2024-12-23T09:34:32.961+0000] {processor.py:161} INFO - Started process (PID=3069) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:34:32.963+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:34:32.965+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:34:32.965+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:34:33.169+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:34:33.169+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:34:33.378+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:34:33.380+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:34:33.380+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:34:33.732+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:34:33.733+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:34:33.733+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:34:33.791+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:34:33.792+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:34:33.791+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:34:34.129+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:34:34.129+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:34:34.129+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:34:36.354+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:34:36.376+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:34:36.376+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:34:36.401+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:34:36.401+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:34:36.436+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 3.480 seconds
+[2024-12-23T09:35:06.873+0000] {processor.py:161} INFO - Started process (PID=3148) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:35:06.875+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:35:06.876+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:06.876+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:35:07.081+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:07.080+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:35:07.332+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:35:07.333+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:07.332+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:35:07.714+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:35:07.715+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:07.715+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:35:07.753+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:35:07.753+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:07.753+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:35:08.109+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:35:08.110+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:08.110+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:35:10.615+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:35:10.646+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:10.645+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:35:10.681+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:10.681+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:35:10.726+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 3.857 seconds
+[2024-12-23T09:35:41.023+0000] {processor.py:161} INFO - Started process (PID=3220) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:35:41.025+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:35:41.027+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:41.027+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:35:41.287+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:41.287+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:35:41.496+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:35:41.497+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:41.497+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:35:41.858+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:35:41.859+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:41.859+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:35:41.896+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:35:41.897+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:41.896+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:35:42.248+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:35:42.248+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:42.248+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:35:50.189+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:35:50.217+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:50.216+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:35:50.244+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:35:50.243+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:35:50.273+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 9.257 seconds
+[2024-12-23T09:36:21.280+0000] {processor.py:161} INFO - Started process (PID=3310) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:36:21.281+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:36:21.284+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:21.283+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:36:21.908+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:21.908+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:36:22.169+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:36:22.170+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:22.170+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:36:22.572+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:36:22.573+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:22.572+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:36:22.623+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:36:22.624+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:22.624+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:36:23.162+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:36:23.163+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:23.163+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:36:25.904+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:36:25.928+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:25.927+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:36:25.955+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:25.955+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:36:25.980+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 4.708 seconds
+[2024-12-23T09:36:56.374+0000] {processor.py:161} INFO - Started process (PID=3396) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:36:56.376+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:36:56.378+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:56.377+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:36:56.688+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:56.688+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:36:56.894+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:36:56.895+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:56.895+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:36:57.366+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:36:57.367+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:57.367+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:36:57.403+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:36:57.404+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:57.404+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:36:57.808+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:36:57.808+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:36:57.808+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:37:00.596+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:37:00.621+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:37:00.620+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:37:00.647+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:37:00.647+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:37:00.677+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 4.308 seconds
+[2024-12-23T09:37:31.019+0000] {processor.py:161} INFO - Started process (PID=3495) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:37:31.021+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:37:31.022+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:37:31.022+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:37:31.209+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:37:31.209+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:37:31.470+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:37:31.471+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:37:31.470+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:37:31.877+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:37:31.878+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:37:31.878+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:37:31.915+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:37:31.916+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:37:31.916+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:37:32.299+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:37:32.300+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:37:32.299+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:37:34.630+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:37:34.655+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:37:34.655+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:37:34.682+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:37:34.682+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:37:34.717+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 3.702 seconds
+[2024-12-23T09:38:05.326+0000] {processor.py:161} INFO - Started process (PID=3579) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:38:05.327+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:38:05.328+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:05.328+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:38:05.506+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:05.505+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:38:05.690+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:38:05.691+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:05.690+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:38:06.030+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:38:06.031+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:06.031+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:38:06.074+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:38:06.075+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:06.075+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:38:06.526+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:38:06.527+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:06.527+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:38:08.971+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:38:08.994+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:08.994+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:38:09.019+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:09.019+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:38:09.053+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 3.730 seconds
+[2024-12-23T09:38:39.625+0000] {processor.py:161} INFO - Started process (PID=3651) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:38:39.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:38:39.628+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:39.627+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:38:39.810+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:39.809+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:38:40.008+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:38:40.009+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:40.009+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:38:40.365+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:38:40.366+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:40.366+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:38:40.430+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:38:40.432+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:40.432+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:38:40.775+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:38:40.776+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:40.776+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:38:43.201+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:38:43.222+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:43.222+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:38:43.244+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:38:43.244+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:38:43.266+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 3.645 seconds
+[2024-12-23T09:39:13.475+0000] {processor.py:161} INFO - Started process (PID=3731) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:39:13.476+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:39:13.477+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:13.477+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:39:13.675+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:13.675+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:39:13.954+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:39:13.955+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:13.955+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:39:14.334+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:39:14.335+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:14.335+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:39:14.374+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:39:14.375+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:14.375+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:39:14.765+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:39:14.766+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:14.766+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:39:17.405+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:39:17.432+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:17.431+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:39:17.461+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:17.460+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:39:17.496+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 4.024 seconds
+[2024-12-23T09:39:47.934+0000] {processor.py:161} INFO - Started process (PID=3803) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:39:47.935+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:39:47.936+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:47.936+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:39:48.130+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:48.130+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:39:48.309+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:39:48.310+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:48.310+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:39:48.673+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:39:48.674+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:48.673+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:39:48.707+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:39:48.708+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:48.708+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:39:49.042+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:39:49.043+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:49.042+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:39:51.357+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:39:51.378+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:51.377+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:39:51.404+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:39:51.404+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:39:51.426+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 3.496 seconds
+[2024-12-23T09:40:21.902+0000] {processor.py:161} INFO - Started process (PID=3885) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:40:21.903+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:40:21.905+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:21.904+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:40:22.105+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:22.105+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:40:22.300+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:40:22.301+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:22.300+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:40:22.685+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:40:22.686+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:22.686+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:40:22.753+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:40:22.754+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:22.754+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:40:23.167+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:40:23.168+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:23.168+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:40:25.428+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:40:25.462+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:25.461+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:40:25.502+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:25.502+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:40:25.532+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 3.634 seconds
+[2024-12-23T09:40:55.875+0000] {processor.py:161} INFO - Started process (PID=3964) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:40:55.877+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:40:55.879+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:55.878+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:40:56.095+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:56.095+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:40:56.311+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:40:56.311+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:56.311+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:40:56.766+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:40:56.767+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:56.767+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:40:56.829+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:40:56.830+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:56.830+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:40:57.222+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:40:57.223+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:57.223+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:40:59.642+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:40:59.669+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:59.668+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:40:59.693+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:40:59.693+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:40:59.721+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 3.853 seconds
+[2024-12-23T09:41:29.866+0000] {processor.py:161} INFO - Started process (PID=4051) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:41:29.868+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:41:29.869+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:41:29.869+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:41:30.149+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:41:30.149+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:41:30.358+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:41:30.360+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:41:30.359+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:41:30.752+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:41:30.753+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:41:30.753+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:41:30.811+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:41:30.811+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:41:30.811+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:41:31.208+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:41:31.209+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:41:31.208+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:41:33.791+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:41:33.814+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:41:33.813+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:41:33.835+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:41:33.835+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:41:33.863+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 4.002 seconds
+[2024-12-23T09:42:03.968+0000] {processor.py:161} INFO - Started process (PID=4136) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:42:03.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-23T09:42:03.971+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:42:03.970+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:42:04.186+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:42:04.186+0000] {tokens.py:86} WARNING - The added token already exists in the token cache, skipping
+[2024-12-23T09:42:04.384+0000] {logging_mixin.py:188} INFO - Accessing as sarahlunette
+[2024-12-23T09:42:04.386+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:42:04.385+0000] {helpers.py:107} INFO - Accessing as sarahlunette
+[2024-12-23T09:42:04.759+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:42:04.760+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:42:04.760+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:42:04.797+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:42:04.798+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:42:04.798+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:42:05.147+0000] {logging_mixin.py:188} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the 
+bucket
+[2024-12-23T09:42:05.147+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:42:05.147+0000] {helpers.py:107} INFO - Client created. Use the name of the repo (Data_Atelier) as the name of the bucket
+[2024-12-23T09:42:07.640+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-23T09:42:07.663+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:42:07.662+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-23T09:42:07.685+0000] {logging_mixin.py:188} INFO - [2024-12-23T09:42:07.684+0000] {dag.py:3823} INFO - Setting next_dagrun for training_pipeline to 2024-10-27 00:00:00+00:00, run_after=2024-10-28 00:00:00+00:00
+[2024-12-23T09:42:07.711+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 3.748 seconds

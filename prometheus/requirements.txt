@@ -1,0 +1,7 @@
+fastapi==0.101.1
+uvicorn==0.24.0
+prometheus-client==0.16.0
+dagshub
+mlflow==2.17.2
+pandas==2.1.2
+scikit-learn==1.5.2

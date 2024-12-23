@@ -267,4 +267,4 @@ def metrics():
 if __name__ == "__main__":
     # Start Prometheus server
     start_http_server(8080)  # The port where Prometheus can get the metrics
-    app.run(port=8080)  # L'API functions on port 8080
+    api.run(port=8080)  # L'API functions on port 8080
