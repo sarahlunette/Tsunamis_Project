@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Request, Response
-from prometheus_client import start_http_server, Counter, generate_latest, Histogram, REGISTRY
+from prometheus_client import start_http_server, Counter, generate_latest, Histogram, REGISTRY, Gauge, make_asgi_app
 import mlflow
 import dagshub
 from pydantic import BaseModel
@@ -151,8 +151,47 @@ columns_final = [
     "country_yemen",
 ]
 
+PREDICTION_TIME = Histogram(
+    "prediction_latency_seconds", "Latency of predictions"
+)
+MODEL_ACCURACY = Gauge("model_accuracy", "Production model accuracy")
+
+INPUT_DISTRIBUTION = Histogram(
+    "input_feature_distribution", "Feature distribution", ["feature"]
+) # TODO: Put in place Evidently
+
+#TODO: check this on how to expose metrics vs the underneath function
+## Expose metrics endpoint
+#app.mount("/metrics", make_asgi_app())
+
+# Endpoint prédiction
+#TODO: check this for prediction latency from @prediction_time
+@app.post("/predict")
+@PREDICTION_TIME.time()  # automatically measures prediction duration
+async def predict(request: Request):
+    REQUEST_COUNT.labels(endpoint="/predict", method="POST").inc() # here
+
+    # Simulation of prediction
+    start_time = time.time()
+    data = await request.json()
+    # Example of prediction
+    prediction = sum(data["features"])  # Replace with real model
+    latency = time.time() - start_time
+
+    # Log distribution of a feature
+    INPUT_DISTRIBUTION.labels(feature="feature1").observe(data["features"][0])
+
+    # Log performance modèle (simulé ici)
+    MODEL_ACCURACY.set(0.85)  # Real Accuracy
+
+    return {"prediction": prediction, "latency": latency} 
+
+
 @app.post("/predict/")
+@PREDICTION_TIME.time()  # automatically measures prediction duration
 async def predict(input_data: InputData):
+# async def predict(request: Request): # TODO: check if I need this line
+    REQUEST_COUNT.labels(endpoint="/predict", method="POST").inc() # here
     start_time = time.time()
     http_requests_total.inc()
     
@@ -169,6 +208,15 @@ async def predict(input_data: InputData):
     record = record.reindex(columns=columns_final, fill_value=0)
     record["clustering"] = 0  # Example: adding a clustering column, filled with 0 #TODO: real clustering logic
 
+    # TODO: get all data new included and look at total and in prod distribution (better with evidently)
+    # TODO: in the next lines: change return and add input_distribution and model_accuracy
+    # Log distribution of a feature
+    # INPUT_DISTRIBUTION.labels(feature="feature1").observe(data["features"][0])
+
+    # Log performance model (simulated here)
+    # MODEL_ACCURACY.set(0.85)  # Real Accuracy
+
+    # return {"prediction": prediction, "latency": latency} 
     # Prediction
     try:
         prediction = model.predict(record)
@@ -185,6 +233,7 @@ def metrics(request: Request):
     
     # Return the data with the correct content type for Prometheus
     return Response(content=metrics_data, media_type="text/plain")
+
 
 # Entry point for both local and Docker execution
 if __name__ == "__main__":
