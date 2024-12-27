@@ -1,3 +1,4 @@
+# TODO
 global:
   scrape_interval: 15s  # Default scrape interval for targets.
 
@@ -6,3 +7,24 @@ scrape_configs:
     static_configs:
       - targets:
           - "fastapi_container:8000"  # FastAPI app running on port 8000 in the Docker network
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - 'alertmanager:9093'  # Alertmanager Address
+
+rule_files:
+  - "alert_rules.yml"  # Separate file for alert rules
+
+# Defines alert rules
+groups:
+  - name: example_alerts
+    rules:
+    - alert: LowR2Alert
+      expr: model_r2 < 0.5  # if metric is below 0.5 # TODO: change threshold if necessary
+      for: 1m  # Condition for one minute
+      labels:
+        severity: critical
+      annotations:
+        summary: "R² is below 0.5, retraining may be required."
