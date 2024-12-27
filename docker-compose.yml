@@ -171,4 +171,6 @@ networks:
 
 volumes:
   postgres-db-volume:
-  prometheus-data: # Volume for persistent data
+  prometheus-data: # Volume for persistent
+
+# TODO: change files for statsd in docker-compose, prometheus.yml at least
