@@ -1,0 +1,13 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  group_by: ['alertname']
+  receiver: 'api_webhook'
+
+receivers:
+  - name: 'api_webhook'
+    webhook_configs:
+      - url: 'http://api_service/retrain'  # API URL for retraining
+        http_config:
+          method: 'POST'

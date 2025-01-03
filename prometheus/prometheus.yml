@@ -1,7 +1,30 @@
+# TODO
 global:
-  scrape_interval: 15s  # Intervalle de scraping pour Prometheus
+  scrape_interval: 15s  # Default scrape interval for targets.
 
 scrape_configs:
-  - job_name: 'api'
+  - job_name: "fastapi"                # Identifier for the FastAPI service
     static_configs:
-      - targets: ['localhost:8000']  # L'API FastAPI s'exécute sur le port 8000 dans le conteneur
+      - targets:
+          - "fastapi_container:8000"  # FastAPI app running on port 8000 in the Docker network # TODO: do I need to put brackets around command ?
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - 'alertmanager:9093'  # Alertmanager Address
+
+rule_files:
+  - "alert_rules.yml"  # Separate file for alert rules
+
+# Defines alert rules
+groups:
+  - name: example_alerts
+    rules:
+    - alert: LowR2Alert
+      expr: model_r2 < 0.5  # if metric is below 0.5 # TODO: change threshold if necessary
+      for: 1m  # Condition for one minute
+      labels:
+        severity: critical
+      annotations:
+        summary: "R² is below 0.5, retraining may be required."

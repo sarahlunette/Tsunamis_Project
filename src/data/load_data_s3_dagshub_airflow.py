@@ -5,7 +5,7 @@ from dagshub import get_repo_bucket_client
 s3 = get_repo_bucket_client("sarahlunette/Data_Atelier")
 
 # TODO changer le path
-path = "opt/airflow/data/raw/"
+path = "/opt/airflow/data/raw/"
 # dagspath = 'raw/'
 
 
@@ -21,3 +21,4 @@ def upload_all():
     upload_file(path, "tsunamis.csv")
     upload_file(path, "gdp.csv")
     upload_file(path, "population.csv")
+

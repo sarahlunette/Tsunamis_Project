@@ -41,7 +41,7 @@ def create_table(df, name):
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
 
-    df.to_csv("/usr/local/data/processed/" + name)
+    df.to_csv("/opt/airflow/data/processed/" + name)
 
 
 def write_data():
