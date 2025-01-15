@@ -6477,3 +6477,73 @@ Traceback (most recent call last):
 ImportError: cannot import name 'task' from 'airflow.utils.decorators' (/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/decorators.py)
 [2024-12-27T23:48:16.084+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/training_pipeline.py
 [2024-12-27T23:48:16.114+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 0.065 seconds
+[2024-12-27T23:48:46.316+0000] {processor.py:161} INFO - Started process (PID=2361) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:48:46.319+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-27T23:48:46.324+0000] {logging_mixin.py:188} INFO - [2024-12-27T23:48:46.323+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:48:46.368+0000] {logging_mixin.py:188} INFO - [2024-12-27T23:48:46.358+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/training_pipeline.py", line 11, in <module>
+    from airflow.utils.decorators import task
+ImportError: cannot import name 'task' from 'airflow.utils.decorators' (/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/decorators.py)
+[2024-12-27T23:48:46.372+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:48:46.418+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 0.109 seconds
+[2024-12-27T23:49:17.027+0000] {processor.py:161} INFO - Started process (PID=2425) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:49:17.028+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-27T23:49:17.031+0000] {logging_mixin.py:188} INFO - [2024-12-27T23:49:17.031+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:49:17.054+0000] {logging_mixin.py:188} INFO - [2024-12-27T23:49:17.049+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/training_pipeline.py", line 11, in <module>
+    from airflow.utils.decorators import task
+ImportError: cannot import name 'task' from 'airflow.utils.decorators' (/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/decorators.py)
+[2024-12-27T23:49:17.056+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:49:17.080+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 0.057 seconds
+[2024-12-27T23:49:47.421+0000] {processor.py:161} INFO - Started process (PID=2496) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:49:47.423+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-27T23:49:47.426+0000] {logging_mixin.py:188} INFO - [2024-12-27T23:49:47.426+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:49:47.452+0000] {logging_mixin.py:188} INFO - [2024-12-27T23:49:47.446+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/training_pipeline.py", line 11, in <module>
+    from airflow.utils.decorators import task
+ImportError: cannot import name 'task' from 'airflow.utils.decorators' (/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/decorators.py)
+[2024-12-27T23:49:47.454+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:49:47.490+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 0.074 seconds
+[2024-12-27T23:50:17.579+0000] {processor.py:161} INFO - Started process (PID=2560) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:50:17.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-27T23:50:17.584+0000] {logging_mixin.py:188} INFO - [2024-12-27T23:50:17.583+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:50:17.622+0000] {logging_mixin.py:188} INFO - [2024-12-27T23:50:17.613+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/training_pipeline.py", line 11, in <module>
+    from airflow.utils.decorators import task
+ImportError: cannot import name 'task' from 'airflow.utils.decorators' (/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/decorators.py)
+[2024-12-27T23:50:17.625+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:50:17.671+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 0.096 seconds
+[2024-12-27T23:50:48.477+0000] {processor.py:161} INFO - Started process (PID=2622) to work on /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:50:48.478+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline.py for tasks to queue
+[2024-12-27T23:50:48.481+0000] {logging_mixin.py:188} INFO - [2024-12-27T23:50:48.480+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:50:48.506+0000] {logging_mixin.py:188} INFO - [2024-12-27T23:50:48.500+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/training_pipeline.py", line 11, in <module>
+    from airflow.utils.decorators import task
+ImportError: cannot import name 'task' from 'airflow.utils.decorators' (/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/decorators.py)
+[2024-12-27T23:50:48.508+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/training_pipeline.py
+[2024-12-27T23:50:48.539+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline.py took 0.067 seconds
