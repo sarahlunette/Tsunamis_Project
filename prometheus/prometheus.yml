@@ -6,7 +6,7 @@ scrape_configs:
   - job_name: "fastapi"                # Identifier for the FastAPI service
     static_configs:
       - targets:
-          - "fastapi_container:8000"  # FastAPI app running on port 8000 in the Docker network
+          - "fastapi_container:8000"  # FastAPI app running on port 8000 in the Docker network # TODO: do I need to put brackets around command ?
 
 alerting:
   alertmanagers:
